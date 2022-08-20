@@ -183,4 +183,4 @@ shift + fn - 8 : yabai -m window --space 8
 shift + fn - 9 : yabai -m window --space 9 
 
 hyper - f : yabai -m window --toggle zoom-fullscreen
-
+hyper - return : ~/.new-term.sh
