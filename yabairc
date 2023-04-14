@@ -26,7 +26,7 @@ yabai -m config window_opacity_duration      0.0
 yabai -m config active_window_opacity        1.0
 yabai -m config normal_window_opacity        0.90
 yabai -m config window_border                on
-yabai -m config window_border_width          6
+yabai -m config window_border_width          2
 yabai -m config active_window_border_color   0xffab29c2
 yabai -m config normal_window_border_color   0xff555555
 yabai -m config insert_feedback_color        0xffd75f5f
@@ -47,9 +47,10 @@ yabai -m config window_gap                   02
 
 yabai -m rule --add app="^Simulator$" layer=above manage=off
 yabai -m rule --add app="^System Preferences$" layer=above manage=off
+yabai -m rule --add app="^System Information$" layer=above manage=off
 yabai -m rule --add app="^Karabiner-Elements$" layer=above manage=off
 yabai -m rule --add app="^Karabiner-EventViewer$" layer=above manage=off
 
-
+yabai -m config window_border_blur off
 
 echo "yabai configuration loaded.."
